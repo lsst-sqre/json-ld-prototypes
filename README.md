@@ -21,6 +21,11 @@
 - Is it possible to *extend* a JSON-LD schema without having to copy it? For example, add additional fields to `codemeta.jsonld` to support internal LSST metadata. Given the [spec page](http://json-ld.org/spec/latest/json-ld/#the-context), it seems that we'll have to copy `codemeta.jsonld` in order to extend it for additional fields.
 - CodeMeta uses http://schema.org/name but it might be nice to use http://schema.org/familyName and http://schema.org/givenName. How would this work? Add `familyName` and `givenName` to the context, but ensure that `familyName` and `givenName` are synced to `name` server-side.
 
+### Licenses
+
+Note that the licenseId field in CodeMeta seems to correspond to to [SPDX identifiers](https://spdx.org/licenses/).
+See CodeMeta issue [#67](https://github.com/codemeta/codemeta/issues/67) for background.
+
 ### Organizations
 
 How pedantic should we be about organizations? schema.org allows sub-organizations (https://schema.org/parentOrganization) so that in principle we could create a tree of organizations in the `agents` field. For example, we can do AURA -> LSST -> DM -> SQuaRE. This *could* be enable users to browse projects by their sponsoring organization. Alternatively, a direct field could be used instead of presenting a hierarchy. Or place organizations in tags?

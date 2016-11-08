@@ -40,8 +40,7 @@
       "isMaintainer": true
     }
   ],
-  "name": "LTD Mason",
-  "codeRepository": "https://github.com/lsst-sqre/ltd-mason",
+  "codeRepository": "https://github.com/lsst-sqre/ltd-keeper",
   "controlledTerms": [],
   "datePublished": "2016-08-30",
   "dateModified": "2016-08-30",
@@ -51,6 +50,8 @@
   "isAutomatedBuild": true,
   "tags": ["ltd"],
   "version": "master",
+  "licenseId": "MIT",
+  "title": "LTD Keeper",
   "uploadedBy": {
     "@id": "https://orcid.org/0000-0003-3001-676X",
     "@type": "Person",
